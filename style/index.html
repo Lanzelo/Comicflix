@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- define o código como HTML5, padrão em varios navegadores--> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--compatibilidade pra dispositivos móveis-->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="/style/responsive.css">
+
+    <!-- arquivos owl carrousel css    -->
+    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+
+    <title>COMICFLIX</title>
+</head>
+<body>
+    <header>
+        <div class="container" > <!-- toda estrutura dentro de HTML é uma div, aind que tenha alguma outra definição semântica mais precisa, como header, footer, nav, etc -->
+            <h2 class="logo">COMICFLIX</h2>
+            <nav> <!-- barra de navegação -->
+                <a href="#">Início</a>
+                <a href="#">HQ's</a>
+                <a href="#">Graphic Novels</a>
+                <a href="#">Mangás</a>
+                <a href="#">Tirinhas</a>
+            </nav>
+    </header>
+
+    <main>
+        <div class="hq-principal">
+            <div class="container">
+                <h3 class="titulo">X-MEN</h3>        
+	            <p class="resumo">Eles são os filhos do átomo, seres com poderes especiais devido a alterações genéticas. Ao mesmo tempo em que caminham para ser o próximo degrau na escalada evolucionária humana, sofrem com uma onda de preconceito e ódio.</p>
+            <div class="botoes">
+                <button role="button" class="botao">
+                    <i class="fas fa-play"></i>
+                    LER AGORA
+                </button>
+                <button role="button" class="botao">
+                    <i class="fas fa-info"></i>
+                    MAIS INFORMAÇÕES
+                </button>
+                <!-- role = semântica para o navegador reenderizar -->
+                <!-- por que a div botões é block em relação a hq principal e container não?-->
+            </div>
+        </div>
+        </div>
+
+    <!--div com conceito semântico para ferramentas de SEO identificarem o conteúdo principal da página;
+    escrevendo: div."nome-da-classe", ao dar enter, o VS Code cria a tag pra você
+    -->
+    </main>
+
+    <div class="carrosel-hqs">
+        <div class ="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini10.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini11.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-capa" src="/img/covers/mini12.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Arquivos Javascript ficam por último porque a página carrega em ordem, esão sempre a última coisa a carregar porque são mais pesados -->
+    <script src="https://kit.fontawesome.com/22210853a3.js" crossorigin="anonymous"></script>
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/setup.js"></script>
+
+</body>
+</html>

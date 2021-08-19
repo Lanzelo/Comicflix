@@ -1,0 +1,120 @@
+:root{/* root é a raíz do css, permite declarar variáveis dentro dele*/
+    --vermelho: #E50914; 
+    --preto: #141414;
+    /* declarar cores como variáveis é uma boa prática, permite altera-las com maior facilidade, ao invés de alterar as cores em cada bloco*/
+}
+
+*{ /* reset do CSS */
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    /* box-sizing = define o limite dos componentes de uma div, 
+    border-box = define o limite como a própria div, de modo que os seus componentes não podem vaza-la */
+}
+
+/*elementos base*/
+
+header .container {
+	display: flex; /* coloca os elementos dispostos em linhas (rows) */;
+	flex-direction: row /* marcando apenas pra reforçar */;
+	align-items: center; /* alinha os elementos na vertical*/
+	justify-content: space-between;	/* alinha na horizontal, separa os elementos de dentro da caixa com espaço ENTRE ELES*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color:var(--vermelho);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+header nav a{
+	text-decoration:none;
+	color:#AAA;
+	margin-right:10px;
+}
+
+header nav a:hover { /* executa um evento quando o mouse está sobre o elemento*/
+	color:#fff;
+}
+
+body{
+    background-color:var(--preto);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white
+}
+
+/* hq principal*/
+
+.hq-principal{
+    font-size:16px;
+    margin-left: 5px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/x-men.png');
+    height: 400px;
+    background-size:cover; /*cover: pega a área de cobertura da caixa, MAS NÃO TÁ FUNCIONANDO DIREITO*/
+    
+    /* rgb_a, a = camada alfa
+    gradiente pede pelo menos 2 cores pra fazer a variação de cor */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.hq-principal .resumo{
+    margin-bottom: 50px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.titulo{                /* Por que resumo precisa de .hq-principal e titulo não?*/
+    margin-top: 15%;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    color:white;
+
+    padding:15px 30px; /* 1 valor = 4 lados, 2 valores = 1º cima e baixo, 2º esq-dir
+    3 ou 4 valores = sentido horario (inicia de cima)
+    */
+    margin-right: 15px;
+    font-size: 10px;
+
+    cursor: pointer; /* torna o objeto responsivo ao cursor */
+    transition: .5s ease all; /* faz a transição de tempo entre as animações*/
+}
+
+.botao:hover{ /* efetio quando passar o cursor em cima */
+	background-color:white; /*gera animação, vai ser influenciado pelo transition*/
+	color:black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+
+.hq-principal .container{
+	width: 70%;
+}
+
+.box-capa{
+    height: 10%;
+    width: 10%;
+    display: block;
+}
+
+.carrosel-hqs{
+    margin-top: 10px;
+}
